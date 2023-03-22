@@ -62,9 +62,11 @@ function addTwoandThree() {
     // display = in the "equalsOutput" div, do the math, AND display answer in "output" div
     equalBtn.addEventListener('click', function() {
         equalsOutput.innerHTML = "="; 
+        // math is hard coded below
         output.innerHTML = 2 + 3;
+        // add dynamic math based on function inputs and tie-in with click events
     })
-    // display 5 in the "output" div 
+   
     
 }
 
