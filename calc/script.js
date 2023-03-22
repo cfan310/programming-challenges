@@ -29,19 +29,47 @@ twoValue = 2;
 threeValue = 3;
 zeroValue = 0;
 
+let numArray = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]; 
+
 
 // first, let's click 9 and display it somewhere on the page 
 
 nineBtn.addEventListener('click', function displayNine(){
-    output.innerHTML = nineBtn;
-}); 
+    output.innerHTML = nineValue;
+});   
 
-// create a screen variable, where we will display the text of the butto clicked
-// using its variable, not its innerHTML or innerText since we need an integer and not a string 
 
-let output = document.getElementById('output'); 
- 
-output.innerHTML = 5 + 8; 
+let operand1 = document.getElementById('operand1'); 
+let operand2 = document.getElementById('operand2'); 
+let operator = document.getElementById('operator'); 
+let equalsOutput = document.getElementById('equalsOutput'); 
 
-// give all buttons the same class
+
+
+function addTwoandThree() {
+    // display 2 in the "operand1" div
+    twoBtn.addEventListener('click', function() {
+        operand1.innerHTML = twoValue;
+    })
+    // display + in the "operator" div
+    plusBtn.addEventListener('click', function() {
+        operator.innerHTML = "+"; 
+    })
+    // display 3 in the "operator2" div
+    threeBtn.addEventListener('click', function() {
+        operand2.innerHTML = threeValue;
+    })
+    // display = in the "equalsOutput" div, do the math, AND display answer in "output" div
+    equalBtn.addEventListener('click', function() {
+        equalsOutput.innerHTML = "="; 
+        output.innerHTML = 2 + 3;
+    })
+    // display 5 in the "output" div 
+    
+}
+
+
+// find way to ${} inline code and dynamically add inputs to the function as they are clicked on-screen
+
+addTwoandThree();
 
