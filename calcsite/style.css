@@ -34,6 +34,24 @@ nav {
 }
 
 .section-1 {
-    height: 5000px;
+    height: 1000px;
+}
+
+.question-container {
+    display: flex;
+    height: 500px;
+    padding: 20px;
+}
+
+.questionBox-left {
+    height: 300px;
+    width: 300px;
+
+}
+
+.questionBox-right {
+    height: 500px;
+    width: 500px;
+    background-color: rgb(191, 232, 228);
 
 }
