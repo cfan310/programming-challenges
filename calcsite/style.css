@@ -1,0 +1,39 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    border: solid 2px red;
+}
+
+nav {
+    height: 100px;
+    width: 100%;
+    background-color: gray;
+    display: flex;
+    padding: 30px;
+    color: white;
+    gap: 200px;
+    font-size: 40px;
+}
+
+.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;  
+}
+
+.navbar-left {
+    display: flex;
+}
+
+.navbar-center {
+    display: flex;
+}
+
+.navbar-right {
+    display: flex;
+}
+
+.section-1 {
+    height: 5000px;
+
+}
