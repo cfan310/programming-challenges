@@ -10,9 +10,7 @@ const book2 = new Book('Beyond Good and Evil', 'Friedrich Nietzsche', 1884);
 const book3 = new Book('Permutation City', 'Greg Egan', 1994);
 
 // we will store book objects in an array
-let myLibrary = [book1, book2, book3];
-
-console.log(myLibrary[1].author);
+let myLibrary = [];
 
 const displayBtn = document.getElementById('displayCoverBtn');
 
@@ -67,10 +65,16 @@ form.addEventListener('submit', (e) => {
     const jsonData = JSON.stringify(bookObj); 
     console.log(jsonData); 
     // outputs JSON code: {"bookTitle":"the castle","bookAuthor":"kafka","bookYear":"1924"}
+
+    // let's push this into our myLibrary array, since it's now an object
+    myLibrary.push(bookObj);
+    console.log(myLibrary);  // should output the form input as an object
+
+
     localStorage.setItem('form', jsonData);
 
     // takes us to new page where we can retireve this data
-    window.location.href = 'confirm.html'
+    //window.location.href = 'confirm.html'
 
 
 
