@@ -1,22 +1,46 @@
-/** {
-    margin: 0px;
-    padding: 0px;
-}*/
-
-body {
-    background-color: turquoise;
+* {
+    border: solid 2px rgb(34, 255, 0);
 }
 
-.displayCoverBtn {
+body {
+    background-color: rgb(181, 1, 1);
+}
+
+.btnContainer {
     display: flex;
-    margin: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+/*to center the displayCover btn inside the btnContainer div*/
+.center {
+    margin: 0;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+}
+
+#displayCoverBtn {
+    height: 30px;
+}
+
+.bookCoverImagesContainer {
+    height: 40px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    margin-top: 120px;
+    text-align: center;
+}
+
+.bookCoverContainerText {
+    margin: 10px;
 }
 
 .kafkaImage {
     height: 300px;
     width: 150px;
     visibility: hidden;
-
 }
 
 .nietzscheImage {
