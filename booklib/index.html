@@ -9,6 +9,21 @@
 </head>
 <body>
 
+    <!---form to take object inputs (title, author, year)
+    this info will be stored as an OBJECT in the myLibrary array)
+and we will later iterate thru the objects and display them as cards in the browser-->
+
+    <form>
+        <label for='title' action='' method='GET'>title:</label>
+        <input type='text' id='enteredTitle' name='getTitleValue'></input>
+        <label for='author' action='' method='GET'>author:</label>
+        <input type='text' id='enteredTitle' name='getTitleValue'></input>
+        <label for='year' action='' method='GET'>year:</label>
+        <input type='text' id='enteredTitle' name='getTitleValue'></input>
+        <button type='button' onclick='pushToArray();'>store data as object then push to myLibraryarray</button>
+        <input type='reset' value='Clear form - DO NOT SEND'></input>
+      </form>
+
     <div class="btn-Container">
         <div class="center">
             <button id="displayCoverBtn">Display Cover</button>
@@ -19,10 +34,11 @@
         <div class="bookCoverContainerText">images to be shown below</div>
     </div>
 
- 
-    <img id="kafkaImage" src="./book-images/kafka-cover.jpg">
-    <img id="nietzscheImage" src="./book-images/nietzsche-cover.jpg">
-    <img id="eganImage" src="./book-images/egan-cover.jpg">
+    <div id="coverHolder">
+        <img id="kafkaImage" src="./book-images/kafka-cover.jpg">
+        <img id="nietzscheImage" src="./book-images/nietzsche-cover.jpg">
+        <img id="eganImage" src="./book-images/egan-cover.jpg">
+    </div>  
 
     
     <script src="script.js"></script>
