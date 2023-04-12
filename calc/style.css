@@ -38,8 +38,11 @@ button {
     width: 20px;
 }
 
-#output {
-    height: 40px;
-    width: 80px;
+.output-screen {
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+    height: 30px;
+    width: 100px;
     background-color: white;
 }
