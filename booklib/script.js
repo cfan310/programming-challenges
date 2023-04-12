@@ -44,7 +44,7 @@ function displayCover() {
         })
     })
 }
-displayCover();
+//displayCover();
 
 // form functionality
 // after clicking the submit form button, the title, author, and year inputs will be
@@ -62,6 +62,19 @@ form.addEventListener('submit', (e) => {
     console.log(bookObj);
     // outputs {bookTitle: 'the casle', bookAuthor: 'franz kafka', bookYear: '1924'};
     console.log(bookObj.bookTitle); // outputs the castle (or whatever was submitted in the 'title' input)
+
+    // to pass info to server or to pass data onto another page (in which we can display cards)
+    const jsonData = JSON.stringify(bookObj); 
+    console.log(jsonData); 
+    // outputs JSON code: {"bookTitle":"the castle","bookAuthor":"kafka","bookYear":"1924"}
+    localStorage.setItem('form', jsonData);
+
+    // takes us to new page where we can retireve this data
+    window.location.href = 'confirm.html'
+
+
+
+
 /*
     for (item of bookData) {
         console.log(item);
