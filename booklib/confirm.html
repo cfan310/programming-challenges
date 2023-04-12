@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>confirm.html</title>
+</head>
+<body>
+
+    <div id="data"></div> 
+
+    <a href="index.html">Return</a>
+    
+
+    <script>
+
+        const jsonData = localStorage.getItem('form');
+        const obj = JSON.parse(jsonData);
+
+        for (key in obj) {
+            const markup = `
+            <div>
+                <span>${key}: ${obj[key]} </span> 
+            </div>
+            `;
+            document.getElementById('data').innerHTML += markup; 
+        }
+
+
+
+
+
+    </script>
+</body>
+</html>
