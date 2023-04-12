@@ -1,0 +1,32 @@
+/** {
+    margin: 0px;
+    padding: 0px;
+}*/
+
+body {
+    background-color: turquoise;
+}
+
+.displayCoverBtn {
+    display: flex;
+    margin: 20px;
+}
+
+.kafkaImage {
+    height: 300px;
+    width: 150px;
+    visibility: hidden;
+
+}
+
+.nietzscheImage {
+    height: 300px;
+    width: 150px;
+    visibility: hidden;
+}
+
+.eganImage {
+    height: 300px;
+    width: 150px;
+    visibility: hidden;
+}
