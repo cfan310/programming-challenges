@@ -112,3 +112,21 @@ const castleObj = new Map([
     this.director = director,
     this.year = year
   }
+
+  const movie1 = new Movie('Pulp Fiction', 'Quentin Taranino', 1994);
+  const movie2 = new Movie('Eyes Wide Shut', 'Stanley Kubrick', 1999);
+  const movie3 = new Movie('The Third Man', 'Carol Reed', 1949); 
+
+  let movieLibrary = [];
+  movieLibrary.push(movie1, movie2, movie3);   
+  console.log(movieLibrary);
+  // so now we have an array of movie objects, and we want to iterate through the
+  // movieLibrary array and place each respective movie into a CSS Card and display it on the screen 
+
+
+ for (let i = 0; i <= movieLibrary.length; i++) {
+    let n = movieArray[i];
+    // push n.title to the card title slot
+    // push n.director to the card director slot
+    // push the n.year to the card year slot
+ }
