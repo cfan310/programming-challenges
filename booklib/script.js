@@ -128,5 +128,5 @@ const castleObj = new Map([
     let n = movieArray[i];
     // push n.title to the card title slot
     // push n.director to the card director slot
-    // push the n.year to the card year slot
+    // push the n.year to the card year slot 
  }
