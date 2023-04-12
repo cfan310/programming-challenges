@@ -20,14 +20,26 @@ function BookCover(cover) {
 }
 
 // storing 3 covers as objects
+/*
 const kafkaCover = new BookCover(); 
 kafkaCover.src = './book-images/kafka-cover.jpg';
 const nietzscheCover = new BookCover();
 nietzscheCover.src = './book-images/nietzsche-cover.jpg';
 const eganCover = new BookCover();
-nietzscheCover.src = './book-images/egan-cover.jpg';
+nietzscheCover.src = './book-images/egan-cover.jpg';*/
+
 
 const displayBtn = document.getElementById('displayCoverBtn');
+
+/*
+const kafkaImage = document.createElement('kafkaImage');
+kafkaImage.src = './book-images/kafka-cover.jpg';
+document.getElementById('imagesContainer').appendChild(kafkaImage);*/
+
+const kafkaCover = document.getElementById('kafkaImage');
+const nietzscheCover = document.getElementById('nietzscheImage');
+const eganCover = document.getElementById('eganImage');
+
 
 // now that we have these covers, let's create a function to display simply in the browser
 // we will store onclick=displayCover in the displayCover html button tag
@@ -35,7 +47,10 @@ function displayCover() {
     // if displayCover btn is clicked
     // display kafka cover
     // first let's automatically the image in css and change the hidden in this function
-    
-
-
+    displayBtn.addEventListener('click', function() {
+        kafkaCover.style.visibility = 'visible';
+        nietzscheCover.style.visibility = 'visible';
+        eganCover.style.visibility = 'visible';
+    })
 }
+displayCover();

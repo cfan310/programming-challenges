@@ -9,11 +9,21 @@
 </head>
 <body>
 
-    <button id="displayCoverBtn">Display Cover</button>
+    <div class="btn-Container">
+        <div class="center">
+            <button id="displayCoverBtn">Display Cover</button>
+        </div>
+    </div>
 
-    <img class="kafkaImage" src="./book-images/kafka-cover.jpg">
-    <img class="nietzscheImage" src="./book-images/nietzsche-cover.jpg">
-    <img class="eganImage" src="./book-images/egan-cover.jpg">
+    <div class="bookCoverImagesContainer" id="imagesContainer">
+        <div class="bookCoverContainerText">images to be shown below</div>
+    </div>
+
+ 
+    <img id="kafkaImage" src="./book-images/kafka-cover.jpg">
+    <img id="nietzscheImage" src="./book-images/nietzsche-cover.jpg">
+    <img id="eganImage" src="./book-images/egan-cover.jpg">
+
     
     <script src="script.js"></script>
 </body>
