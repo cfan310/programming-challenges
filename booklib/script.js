@@ -14,27 +14,8 @@ let myLibrary = [book1, book2, book3];
 
 console.log(myLibrary[1].author);
 
-// bookCover object constructor function
-function BookCover(cover) {
-    this.cover = cover;
-}
-
-// storing 3 covers as objects
-/*
-const kafkaCover = new BookCover(); 
-kafkaCover.src = './book-images/kafka-cover.jpg';
-const nietzscheCover = new BookCover();
-nietzscheCover.src = './book-images/nietzsche-cover.jpg';
-const eganCover = new BookCover();
-nietzscheCover.src = './book-images/egan-cover.jpg';*/
-
-
 const displayBtn = document.getElementById('displayCoverBtn');
 
-/*
-const kafkaImage = document.createElement('kafkaImage');
-kafkaImage.src = './book-images/kafka-cover.jpg';
-document.getElementById('imagesContainer').appendChild(kafkaImage);*/
 
 const kafkaCover = document.getElementById('kafkaImage');
 const nietzscheCover = document.getElementById('nietzscheImage');
@@ -64,3 +45,42 @@ function displayCover() {
     })
 }
 displayCover();
+
+// form functionality
+// after clicking the submit form button, the title, author, and year inputs will be
+// stores as objects. Those objects will then be pushed to the myLibrary array. 
+
+// store form element as a variable
+const form = document.querySelector('form'); 
+
+form.addEventListener('submit', (e) => {
+    e.preventDefault(); // prevents the default html behavior from trying to submit the form itself (which involves a page refresh)
+    const bookData = new FormData(form); 
+    console.log(bookData);
+    // creates an object from the key value pairs ( ['bookTitle', 'the castle']) of form submission input data
+    const bookObj = Object.fromEntries(bookData);
+    console.log(bookObj);
+    // outputs {bookTitle: 'the casle', bookAuthor: 'franz kafka', bookYear: '1924'};
+    console.log(bookObj.bookTitle); // outputs the castle (or whatever was submitted in the 'title' input)
+/*
+    for (item of bookData) {
+        console.log(item);
+    }
+    // returns
+    ['bookTitle', 'the castle']     key: value
+    ['bookAuthor', 'franz kafka']   key: value 
+    ['bookYear', '1924']            key: value
+    */
+
+})
+
+const castleObj = new Map([
+    ['foo', 'bar'], 
+    ['baz', 42]
+  ]);
+   
+  const obj = Object.fromEntries(castleObj);
+  
+  console.log(obj);
+  // Expected output: Object { foo: "bar", baz: 42 }
+  
