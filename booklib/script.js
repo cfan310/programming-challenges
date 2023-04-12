@@ -71,10 +71,10 @@ form.addEventListener('submit', (e) => {
     console.log(myLibrary);  // should output the form input as an object
 
 
-    localStorage.setItem('form', jsonData);
+    localStorage.setItem('form', jsonData); 
 
     // takes us to new page where we can retireve this data
-    //window.location.href = 'confirm.html'
+    // window.location.href = 'confirm.html'
 
 
 
@@ -101,3 +101,14 @@ const castleObj = new Map([
   console.log(obj);
   // Expected output: Object { foo: "bar", baz: 42 }
   
+
+  // here we will hard code some cards and use a different array
+  // array will contain objects, and we will push array(objectt)data
+  // and key "value pairs onto the CSS cards (might need to do so)
+  // thru js DOM manipulation) and display in the browser.
+
+  function Movie(title, director, year) {
+    this.title = title,
+    this.director = director,
+    this.year = year
+  }
