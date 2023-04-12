@@ -119,22 +119,24 @@ const castleObj = new Map([
 
   let movieLibrary = [];
   movieLibrary.push(movie1, movie2, movie3);  
-  console.log(movieLibrary[0].title); 
+  //console.log(movieLibrary[0].title); 
   //console.log(movieLibrary);
   // so now we have an array of movie objects, and we want to iterate through the
   // movieLibrary array and place each respective movie into a CSS Card and display it on the screen 
- for (let i = 0; i <= movieLibrary.length; i++) { 
+ /*
+  for (let i = 0; i <= movieLibrary.length; i++) { 
     // 0 1 2
     let n = movieLibrary[i];
     console.log(n);
-    /*const pushDataToCard = `
+    
+    const pushDataToCard = `
     <div class="card">
         <div class="container">
             <h4>${n.title}</h4>
             <h4>${n.director}</h4>
             <p>${n.year}</p>
         </div>
-    `*/
+    `
     document.getElementById('main-card-container').innerHTML = `
     <div class="card">
         <div class="container">
@@ -144,35 +146,13 @@ const castleObj = new Map([
         </div>
     `;
 
+ }*/
+
+ for (let i = 0; i <= movieLibrary.length; i ++) {
+        console.log('Card Info: ')
+    for (let j = 0; j <= movieLibrary.length; j++) {
+        console.log(movieLibrary[j].title);
+        console.log(movieLibrary[j].director);
+        console.log(movieLibrary[j].year); 
+    }
  }
-
-
-
-
-
-
-
-
-
-
-
- /*
- for (let i = 0; i <= movieLibrary.length; i++) {
-    let n = movieArray[i];
-    // push n.title to the card title slot
-    // push n.director to the card director slot
-    // push the n.year to the card year slot 
- }*/
-
- /* we will use this functionality for when we are getting form input object data to cards
- const jsonData = localStorage.getItem('form');
- const obj = JSON.parse(jsonData);
-
- for (key in obj) {
-     const markup = `
-     <div>
-         <span>${key}: ${obj[key]} </span> 
-     </div>
-     `;
-     document.getElementById('data').innerHTML += markup; 
- }*/
