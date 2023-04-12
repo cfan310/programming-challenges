@@ -51,6 +51,16 @@ function displayCover() {
         kafkaCover.style.visibility = 'visible';
         nietzscheCover.style.visibility = 'visible';
         eganCover.style.visibility = 'visible';
+        // now let's create a close window button w/ dynamimc DOM manipulation
+        let closeWindowBtn = document.createElement('button');
+        closeWindowBtn.innerHTML = 'close window';
+        document.getElementById('coverHolder').appendChild(closeWindowBtn);
+        closeWindowBtn.addEventListener('click', function() {
+            kafkaCover.style.visibility = 'hidden';
+            nietzscheCover.style.visibility = 'hidden';
+            eganCover.style.visibility = 'hidden';
+            closeWindowBtn.style.visibility = 'hidden';
+        })
     })
 }
 displayCover();
