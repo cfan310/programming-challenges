@@ -26,3 +26,25 @@ function pushToArray() {
 // store as an Object and THEN push that object to the myLibrary array
 // ----take form input and save that data in a javascript object
 // pushToArray function
+
+
+  /*
+ for (let i = 0; i <= movieLibrary.length; i++) {
+    let n = movieArray[i];
+    // push n.title to the card title slot
+    // push n.director to the card director slot
+    // push the n.year to the card year slot 
+ }
+
+ we will use this functionality for when we are getting form input object data to cards
+ const jsonData = localStorage.getItem('form');
+ const obj = JSON.parse(jsonData);
+
+ for (key in obj) {
+     const markup = `
+     <div>
+         <span>${key}: ${obj[key]} </span> 
+     </div>
+     `;
+     document.getElementById('data').innerHTML += markup; 
+ }*/

@@ -1,9 +1,25 @@
-* {
+/** {
     border: solid 2px rgb(34, 255, 0);
-}
+}*/
 
 body {
     background-color: rgb(181, 1, 1);
+}
+
+form {
+    height: 80px;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+form button {
+    width: 60px;
+}
+
+form input {
+    width: 180px;
 }
 
 .btnContainer {
@@ -16,7 +32,7 @@ body {
 .center {
     margin: 0;
     position: absolute;
-    top: 10%;
+    top: 30%;
     left: 50%;
 }
 
@@ -29,7 +45,7 @@ body {
     width: 100%;
     background-color: black;
     color: white;
-    margin-top: 120px;
+    margin-top: 200px;
     text-align: center;
 }
 
@@ -38,22 +54,48 @@ body {
 }
 
 #kafkaImage {
-    height: 300px;
+    height: 200px;
     width: 150px;
     visibility: hidden;
     background-image: url('./book-images/kafka-cover.jpg');
 }
 
 #nietzscheImage {
-    height: 300px;
+    height: 200px;
     width: 150px;
     visibility: hidden;
     background-image: url('./book-images/nietzsche-cover.jpg');
 }
 
 #eganImage {
-    height: 300px;
+    height: 200px;
     width: 150px;
     visibility: hidden;
     background-image: url('./book-images/egan-cover.jpg');
+}
+
+/*card styling*/
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(8, 0, 255, 0.2);
+    background-color:rgb(255, 255, 255);
+    transition: 0.3s;
+    height: 250px;
+    width: 150px;
+    display: flex;
+    margin-left: 60px;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(249, 249, 249, 0.2);
+}
+
+.container {
+    padding: 10px;
+}
+
+#main-card-container {
+    height: 250px; 
+    width: 100%;
+    background-color: white;
 }
