@@ -61,6 +61,22 @@ form.addEventListener('submit', (e) => {
     // outputs {bookTitle: 'the casle', bookAuthor: 'franz kafka', bookYear: '1924'};
     console.log(bookObj.bookTitle); // outputs the castle (or whatever was submitted in the 'title' input)
 
+    // from here we can pass the object into the myLibrary Array.
+    // Then we can make a function that activates on click that does the form.submit.addevent listener 
+    // (this way every time we submit new info, our array is populated)
+
+    // lastly, we crate a loop that is activated on a function click that
+    // loops through the array and displays each array object in its own individual card
+    // ensure this is automated to create as many cards as there are submissions 
+
+
+
+
+
+
+
+
+
     // to pass info to server or to pass data onto another page (in which we can display cards)
     const jsonData = JSON.stringify(bookObj); 
     console.log(jsonData); 
@@ -91,16 +107,6 @@ form.addEventListener('submit', (e) => {
 
 })
 
-const castleObj = new Map([
-    ['foo', 'bar'], 
-    ['baz', 42]
-  ]);
-   
-  const obj = Object.fromEntries(castleObj);
-  
-  console.log(obj);
-  // Expected output: Object { foo: "bar", baz: 42 }
-  
 
   // here we will hard code some cards and use a different array
   // array will contain objects, and we will push array(objectt)data
@@ -118,7 +124,7 @@ const castleObj = new Map([
   const movie3 = new Movie('The Third Man', 'Carol Reed', 1949); 
 
   let movieLibrary = [];
-  movieLibrary.push(movie1, movie2, movie3);  
+  movieLibrary.push(movie1, movie2, movie3);      
   //console.log(movieLibrary[0].title); 
   //console.log(movieLibrary);
   // so now we have an array of movie objects, and we want to iterate through the
@@ -146,13 +152,18 @@ const castleObj = new Map([
         </div>
     `;
 
- }*/
+ }
 
- for (let i = 0; i <= movieLibrary.length; i ++) {
-        console.log('Card Info: ')
-    for (let j = 0; j <= movieLibrary.length; j++) {
+ for (let i = 0; i <= movieLibrary.length; i++) {
+        //console.log('Card Info: ')
+        let counter = 1;
+    for (let j = 0; j <= movieLibrary.length; j++) { 
+        console.log(`Card ${counter} Info:  `)
         console.log(movieLibrary[j].title);
         console.log(movieLibrary[j].director);
         console.log(movieLibrary[j].year); 
+        counter ++; 
     }
  }
+ */
+
