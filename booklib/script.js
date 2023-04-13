@@ -9,8 +9,6 @@ const book1 = new Book('The Castle', 'Franz Kafka', 1924);
 const book2 = new Book('Beyond Good and Evil', 'Friedrich Nietzsche', 1884);
 const book3 = new Book('Permutation City', 'Greg Egan', 1994);
 
-// we will store book objects in an array
-let myLibrary = [];
 
 const displayBtn = document.getElementById('displayCoverBtn');
 
@@ -51,23 +49,42 @@ function displayCover() {
 // store form element as a variable
 const form = document.querySelector('form'); 
 
-form.addEventListener('submit', (e) => {
-    e.preventDefault(); // prevents the default html behavior from trying to submit the form itself (which involves a page refresh)
-    const bookData = new FormData(form); 
-    console.log(bookData);
-    // creates an object from the key value pairs ( ['bookTitle', 'the castle']) of form submission input data
-    const bookObj = Object.fromEntries(bookData);
-    console.log(bookObj);
-    // outputs {bookTitle: 'the casle', bookAuthor: 'franz kafka', bookYear: '1924'};
-    console.log(bookObj.bookTitle); // outputs the castle (or whatever was submitted in the 'title' input)
+// let's add a function event listener to the submit button with the input >> object transfer inside
 
-    // from here we can pass the object into the myLibrary Array.
+let submitBtn = document.getElementById('submitBtn');
+
+submitBtn.addEventListener('click', function() {
+
+    form.addEventListener('submit', (e) => {
+        e.preventDefault(); // prevents the default html behavior from trying to submit the form itself (which involves a page refresh)
+        const bookData = new FormData(form); 
+        console.log(bookData);
+        // creates an object from the key value pairs ( ['bookTitle', 'the castle']) of form submission input data
+        const bookObj = Object.fromEntries(bookData);
+        console.log(bookObj);
+        // outputs {bookTitle: 'the casle', bookAuthor: 'franz kafka', bookYear: '1924'};
+        console.log(bookObj.bookTitle); // outputs the castle (or whatever was submitted in the 'title' input)
+    
+        // from here we can pass the object into the myLibrary Array.
+        let myLibrary = [];
+        myLibrary.push(bookObj);
+        console.log(myLibrary); 
+
+
+
+
+})
+
+
+
+
+
     // Then we can make a function that activates on click that does the form.submit.addevent listener 
     // (this way every time we submit new info, our array is populated)
 
     // lastly, we crate a loop that is activated on a function click that
     // loops through the array and displays each array object in its own individual card
-    // ensure this is automated to create as many cards as there are submissions 
+    // ensure this is automated to create as many cards as there are submissions  
 
 
 
@@ -77,6 +94,17 @@ form.addEventListener('submit', (e) => {
 
 
 
+
+
+
+
+
+
+
+
+
+
+/*
     // to pass info to server or to pass data onto another page (in which we can display cards)
     const jsonData = JSON.stringify(bookObj); 
     console.log(jsonData); 
@@ -95,7 +123,7 @@ form.addEventListener('submit', (e) => {
 
 
 
-/*
+
     for (item of bookData) {
         console.log(item);
     }
@@ -103,6 +131,8 @@ form.addEventListener('submit', (e) => {
     ['bookTitle', 'the castle']     key: value
     ['bookAuthor', 'franz kafka']   key: value 
     ['bookYear', '1924']            key: value
+
+    
     */
 
 })
