@@ -46,6 +46,11 @@ function displayCover() {
 // after clicking the submit form button, the title, author, and year inputs will be
 // stores as objects. Those objects will then be pushed to the myLibrary array. 
 
+
+
+
+let myLibrary = [];
+
 // store form element as a variable
 const form = document.querySelector('form'); 
 
@@ -66,14 +71,10 @@ submitBtn.addEventListener('click', function() {
         console.log(bookObj.bookTitle); // outputs the castle (or whatever was submitted in the 'title' input)
     
         // from here we can pass the object into the myLibrary Array.
-        let myLibrary = [];
-        myLibrary.push(bookObj);
-        console.log(myLibrary); 
-
-
-
+        myLibrary.push(bookObj);     
 
 })
+console.log(myLibrary); 
 
 
 
