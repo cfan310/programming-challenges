@@ -71,10 +71,26 @@ submitBtn.addEventListener('click', function() {
         console.log(bookObj.bookTitle); // outputs the castle (or whatever was submitted in the 'title' input)
     
         // from here we can pass the object into the myLibrary Array.
-        myLibrary.push(bookObj);     
+        myLibrary.push(bookObj);  
+        console.log(myLibrary[0].bookTitle);  
+        
+        function addCard() {
+            // make a variable for the myLibrary array objects 
+            var bookFromLib = document.createElement('div'); 
+            bookFromLib.innerHTML = `<h3>title: ${myLibrary[0].bookTitle}</h3>
+                                     <h3>author: ${myLibrary[0].bookAuthor}</h3>
+                                     <h3>year:  ${myLibrary[0].bookYear}</h3>`;
+            cardToAppend.appendChild(bookFromLib);      
+        }
+        
+        addCard();
 
 })
 console.log(myLibrary); 
+
+let cardToAppend = document.getElementById('main-card-container'); 
+
+
 
 
 
