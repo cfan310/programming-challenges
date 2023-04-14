@@ -1,10 +1,19 @@
+const rpsButton = document.querySelectorAll('input');
+
+let btnContainer = document.getElementById('btn-container-append');
+
 function disableButtons() {
     rpsButton.forEach(elem => {
         elem.disabled = true;
     })
-}
+    let refreshBtn = document.createElement('button');
+    refreshBtn.innerHTML = 'Refresh Page';
+    refreshBtn.addEventListener('click', function() {
+        window.location.reload();
+    })
+    btnContainer.appendChild(refreshBtn);
 
-const rpsButton = document.querySelectorAll('input');
+}
 
 function getComputerChoice() {  
     // assign random num 0-2 0 is rock 1 is paper 2 is scissors
