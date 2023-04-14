@@ -5,25 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css"></link> 
 </head>
 <body>
 
     <div class="main-container">
         <div class="button-container">
             <div class="rock-container">
-                <button id="rockBtn">rock</button>
+                <input type="button" value="rock" id="rockBtn"></input>
             </div>
             <div class="paper-container">
-                <button id="paperBtn">paper</button>
+                <input type="button" value="paper" id="paperBtn"></button>
             </div>
             <div class="scissors-container">
-                <button id="scissorsBtn">scissors</button>
+                <input type="button" value="scissors" id="scissorsBtn"></button>
             </div> 
         </div>
 
         <div class="gameScore-container">
-            <h2>0-0</h2>
+            <!--we want to dynamically append gameScoreboard for each player or computer win in the
+            5 game span-->
+            <h2 id="gameScoreboard"></h2>
             <div class="declareWinner">
                 <h2 id="declareWinnerText"></h2>
                  <!---append winner here here-->
@@ -33,7 +35,7 @@
         <div class="resultsDisplay">
             <div class="playerResultsHeader">
                 <h1>Player</h1>
-                <div id="playerChoiceLog">
+                <div id="playerChoiceLog"> 
 
                     <!---append player choice here-->
 
@@ -48,8 +50,14 @@
                 </div>
             </div>
         </div>
+
+        <div class="div">
+            <input type="button" value="tree">
+        </div>
+
+
     </div>
     
-    <script src="app.js"></script>
+    <script src="rpsodin.js"> </script>
 </body>
 </html>
