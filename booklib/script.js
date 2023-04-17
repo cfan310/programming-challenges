@@ -216,3 +216,5 @@ let cardToAppend = document.getElementById('main-card-container');
  }
  */
 
+ // add to cards and another to table simultaneously
+
