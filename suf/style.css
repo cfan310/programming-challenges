@@ -1,0 +1,94 @@
+/** {
+    border: solid 2px red;
+}*/ 
+
+.root-container {
+    display: flex;
+}
+
+.left-container {
+    height: 800px;
+    width: 40%;
+    background-color: #596D48;
+}
+
+.right-container {
+    display: flex;
+    flex-direction: column;
+    width: 60%; 
+}
+
+.right-container > div {
+    height: 266.67px;
+}
+
+.row1-container, .row2-container, .row3-container {
+    display: flex;
+}
+
+.row1-container {
+    background-color: rgba(225, 225, 225, 0.803);
+}
+
+.row3-container {
+    background-color: rgba(225, 225, 225, 0.803);  
+}
+
+.row1-text, .row2-text, .row3-text {
+    margin-left: 40px;
+}
+
+.row1-text {
+    /*
+    display: inline-block;
+    margin: 0 auto;
+    padding: 3px;
+    background-color: #8ebf42
+    */
+    margin-top: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.row1-text > p {
+    font-weight: bold;
+}
+
+.buttonContainer > button {
+    border-radius: 80;
+    height: 40px;
+    background-color: #596D48;
+    color: white;
+    font-weight: bold;
+    box-shadow: 1px 2px;
+}
+
+.loginContainer > p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.loginContainer > p > span {
+    color: green;
+    font-weight: bold;
+}
+
+.row3-text {
+    margin-top: 20px;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: row;
+    color: rgb(68, 66, 66);
+    gap: 20px;
+}
+
+form {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: bold; 
+}
+
+input {
+    box-shadow: #E5E7EB;
+}
+
