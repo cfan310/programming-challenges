@@ -1,4 +1,4 @@
-
+/*
 // container of the 16X16 grid  
 const gridContainer = document.getElementById('grid');  
 
@@ -8,13 +8,6 @@ let gridBox = document.createElement('div');
 
 divRow.setAttribute('id', 'divRow');
 divRow.setAttribute('style', 'display: flex; flex-direction: row');
-
-
-/*
-gridBox.style.background = 'green';
-gridBox.style.height = '50px';
-gridBox.style.width = '50px';  
-*/
 
 //gridContainer.appendChild(divRow);
 //divRow.appendChild(gridBox); 
@@ -40,9 +33,7 @@ for (let i = 1; i <= gridArray.length - 1; i++) {
 }
 
 
-const letterContainer = document.getElementById('letterContainer');
 
-/*
 // we want to loop thru 10 numbers and append each one as a div (making
 // them siblings) to letterContainer
 
@@ -58,24 +49,28 @@ for ( let i = 0; i < 16; i++) {
     newBox.setAttribute('style','height: 50px; width: 50px; background-color: purple; border: solid 1px;');
     newRow.appendChild(newBox);  
 
-}*/
+}
+*/
 
 // with nested loop 
+
+const gridContainer = document.getElementById('gridContainer');
 
 for (i = 0; i <= 15; i++) {
 
     let newRow = document.createElement('div');
     //newRow.innerHTML = 'row div';
-    letterContainer.appendChild(newRow);
+    gridContainer.appendChild(newRow);
 
     for ( let i = 0; i < 16; i++) {
 
         let newBox = document.createElement('div'); 
-        newBox.innerHTML = 'div';
-        newBox.setAttribute('style','height: 50px; width: 50px; background-color: purple; border: solid 1px;');
-        newRow.appendChild(newBox);  
+        newBox.setAttribute('class', 'newBox');
+        /*newBox.innerHTML = 'div';*/
+        newBox.setAttribute('style','height: 50px; width: 50px; border: solid 1px;');
+        newRow.appendChild(newBox); 
     
     }
 
-
 }
+
