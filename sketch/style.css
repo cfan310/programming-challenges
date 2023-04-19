@@ -1,0 +1,14 @@
+#gridContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.newBox {
+    color: white;
+    background-color: green;
+}
+
+.newBox:hover {
+    background-color: orange;
+}
