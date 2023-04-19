@@ -82,7 +82,8 @@
                                 <label for="passwordConfirm">CONFIRM PASSWORD:
                                 </label>
                                 <br>
-                                <input type="password" id="passwordConfirm" name="passwordConfirm">  
+                                <input type="password" id="passwordConfirm" name="passwordConfirm"> 
+                                <button type="submit" id="formSubmitBtn">Send data to object array</button> 
                             </form>
                         </div>
                     </div>
@@ -92,13 +93,20 @@
         <div class="row3-container">
             <div class="row3-text">
                 <div class="buttonContainer">
-                    <button>Create Account</button>
+                    <button id="createAccountBtn">Create Account</button>
                 </div>
                 <div class="loginContainer">
                     <p>Already have an account? <span>Log In</span></p> 
                 </div>   
+                <div class="loginDataBtnContainer">
+                    <a href="accountinfo.html"><button id="loginDataBtn" onclick="changeColor()">Data</button></a>
+                </div>
             </div>
+
+            
         </div>
+
+        
 
 
     </div>
