@@ -39,24 +39,43 @@ for (let i = 1; i <= gridArray.length - 1; i++) {
 
 }
 
+
 const letterContainer = document.getElementById('letterContainer');
 
-
+/*
 // we want to loop thru 10 numbers and append each one as a div (making
 // them siblings) to letterContainer
 
 for ( let i = 0; i < 16; i++) {
-    /*
+    
     let newLetter = document.createElement('div');
     newLetter.innerHTML = 'A'; 
     letterContainer.appendChild(newLetter);
-    */
-
+    
+    
     let newBox = document.createElement('div'); 
     newBox.innerHTML = 'div';
     newBox.setAttribute('style','height: 50px; width: 50px; background-color: purple; border: solid 1px;');
-    letterContainer.appendChild(newBox);  
+    newRow.appendChild(newBox);  
 
+}*/
+
+// with nested loop 
+
+for (i = 0; i <= 15; i++) {
+
+    let newRow = document.createElement('div');
+    //newRow.innerHTML = 'row div';
+    letterContainer.appendChild(newRow);
+
+    for ( let i = 0; i < 16; i++) {
+
+        let newBox = document.createElement('div'); 
+        newBox.innerHTML = 'div';
+        newBox.setAttribute('style','height: 50px; width: 50px; background-color: purple; border: solid 1px;');
+        newRow.appendChild(newBox);  
+    
+    }
 
 
 }
