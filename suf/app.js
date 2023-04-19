@@ -33,18 +33,58 @@ function LoginInfo(firstName, lastName, email, phoneNumber, password) {
 // create Create Account Button variable 
 const createAccountBtn = document.getElementById('createAccountBtn');
 
-createAccountBtn.addEventListener('click', function() {
+
+const formSubmitBtn = document.getElementById('formSubmitBtn');
+
+/*
+formSubmitBtn.addEventListener('click', function() {
 
     // ensure no refresh
-    form.addEventListener('submit', (e) {
+    form.addEventListener('submit', (e) => {
         // prevent default 
         e.preventDefault(); 
         // create new object from constructor, the inputs being the form data
         const newData = new LoginInfo(form);
-        
+        console.log(newData);
+
     })
 
 
+
+}); */
+
+
+// create const newData = new LoginInfo(input names/values)
+// then push to an array
+// then from this array, loop thru and dynamically add new table rows with table data form input forms 
+
+// example FormData Table 
+
+const form = document.getElementById('contact-form');
+form.addEventListener('submit', callbackFunction); 
+
+// we must define the fuinction that will handle the submit event
+function callbackFunction(event) {
+    // preventDefault to prevent the page from reloading after the submit button is clicked (which is default behavior)
+    event.preventDefault();
+    // create new object w/o constructor that includes form Data
+    const myFormData = new FormData(event.target);   
+    console.log(myFormData); 
+
+    // converts formData to JSON with Object.fromEntries 
+    const formDataObj2 = Object.fromEntries(myFormData.entries());
+    console.log(formDataObj2);     
+    // we can use JSON.stringify() to convert object to a JSON string
+    // we can then send JSON encoded data to APIs
+
+
+
+    
+    /*
+    // converts Form Data to JSON with forEach loop
+    const formDataObj = {};
+    myFormData.forEach((value, key) => (formDataObj[key] = value));
+    console.log(formDataObj);  */
 
 }
 
@@ -52,10 +92,4 @@ createAccountBtn.addEventListener('click', function() {
 
 
 
-
-
-
-// create const newData = new LoginInfo(input names/values)
-// then push to an array
-// then from this array, loop thru and dynamically add new table rows with table data form input forms 
 
