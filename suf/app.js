@@ -9,6 +9,13 @@ let dataBtn = document.getElementById('loginDataBtn');
 // including passwords to an organized HTML table on the
 // accountinfo.html page. 
 
+
+/*
+    // converts Form Data to JSON with forEach loop
+    const formDataObj = {};
+    myFormData.forEach((value, key) => (formDataObj[key] = value));
+    console.log(formDataObj);  */
+
 // first, let's link the account.html page.
 
 function changeColor() {
@@ -68,21 +75,29 @@ function callbackFunction(event) {
     // preventDefault to prevent the page from reloading after the submit button is clicked (which is default behavior)
     event.preventDefault();
     // create new object w/o constructor that includes form Data
-    const myFormData = new FormData(event.target);   
+    let myFormData = new FormData(event.target);   
     console.log(myFormData); 
 
     // converts formData to JSON with Object.fromEntries 
-    const formDataObj2 = Object.fromEntries(myFormData.entries());
+    let formDataObj2 = Object.fromEntries(myFormData.entries());
     console.log(formDataObj2);     
     // we can use JSON.stringify() to convert object to a JSON string
     // we can then send JSON encoded data to APIs
 
-    /*
-    // converts Form Data to JSON with forEach loop
-    const formDataObj = {};
-    myFormData.forEach((value, key) => (formDataObj[key] = value));
-    console.log(formDataObj);  */
-    //return formDataObj2; 
+    // we need the add to table functionality to take place inside this function.
+
+    // array can be created inside the function but as a global variable
+    var formArray = []; 
+    formArray.push(formDataObj2); 
+    console.log(formArray);
+    console.log(formArray[0].emailaddy);
+
+    // now we have the array and we can loop through and append the data to the
+    // table over in accountinfo.html
+    
+    
+    
+
 
 }
 
@@ -103,6 +118,7 @@ let philArray = [];
 
 philArray.push(phil1);
 console.log(philArray); 
+
 
 
 
