@@ -119,3 +119,11 @@ img {
     height: 200px;
 
 }
+
+.newForm {
+    background-color: gold;
+}
+
+table, th, td {
+    border: 1px solid;
+}
