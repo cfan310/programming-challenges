@@ -77,16 +77,32 @@ function callbackFunction(event) {
     // we can use JSON.stringify() to convert object to a JSON string
     // we can then send JSON encoded data to APIs
 
-
-
-    
     /*
     // converts Form Data to JSON with forEach loop
     const formDataObj = {};
     myFormData.forEach((value, key) => (formDataObj[key] = value));
     console.log(formDataObj);  */
+    //return formDataObj2; 
 
 }
+
+let objArray = [];
+
+//objArray.push(callbackFunction()); 
+
+
+function Philosophers(firstname, lastname) {
+    this.firstname = firstname;
+    this.lastname = lastname;
+}
+
+const phil1 = new Philosophers('Friedrich', 'Nietzsche'); 
+console.log(phil1); 
+
+let philArray = []; 
+
+philArray.push(phil1);
+console.log(philArray); 
 
 
 
