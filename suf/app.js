@@ -117,18 +117,17 @@ function callbackFunction(event) {
         messageData.innerHTML = `${formArray[i].message}`;  
 
         newRow.append(fullnameData, emailaddyData, messageData);
- 
-  
-
-        
-
     }
-    
-    
-    
-
-
 }
+
+
+// NEXT STEPS:
+
+// 1. Push the data to both the index.html table AND the accout.html table
+// 2. ensure that the data stays displayed on the table even in the event of a page refresh (such as clicking oer to account.html and back)
+
+
+
 
 let objArray = [];
 
@@ -141,13 +140,13 @@ function Philosophers(firstname, lastname) {
 }
 
 const phil1 = new Philosophers('Friedrich', 'Nietzsche'); 
-console.log(phil1); 
+console.log(phil1);  
 
 let philArray = []; 
 
 philArray.push(phil1);
 console.log(philArray); 
-
+ 
 
 
 
