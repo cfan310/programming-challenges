@@ -90,23 +90,25 @@ function callbackFunction(event) {
     var formArray = []; 
     formArray.push(formDataObj2); 
     console.log(formArray);
-    console.log(formArray[0].emailaddy);
+    console.log(formArray[0].fullname);
+
+
+    let messageTable = document.getElementById('messageTable');
+    let topRow = document.getElementById('topRow'); 
 
     // now we have the array and we can loop through and append the data to the
     // table over in accountinfo.html
 
     for (let i = 0; i <= formArray.length; i++) {
 
-        // grab the topRow table element (we will append to this)
-        let topRow = document.getElementById('topRow');  
         // create a new table row element
         let newRow = document.createElement('TR');
+        // append the newly created row to the topRow 
+        messageTable.append(newRow); 
         // create a new table data element for name, email, and message 
         let fullnameData = document.createElement('TD');
         let emailaddyData = document.createElement('TD');
         let messageData = document.createElement('TD');
-        // append the newly created row to the topRow 
-        topRow.appendChild(newRow); 
         // fullnameData = formArray[0].fullname
         fullnameData.innerHTML = `${formArray[i].fullname}`;
         // emailaddyData = formArray[0].emailaddy
@@ -114,9 +116,11 @@ function callbackFunction(event) {
         // messgaeData = formArray[0].message
         messageData.innerHTML = `${formArray[i].message}`;  
 
+        newRow.append(fullnameData, emailaddyData, messageData);
+ 
+  
 
-
-
+        
 
     }
     
