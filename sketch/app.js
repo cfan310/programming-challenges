@@ -74,3 +74,4 @@ for (i = 0; i <= 15; i++) {
 
 }
 
+// need :hover to remain and leave a trail
