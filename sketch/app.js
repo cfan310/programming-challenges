@@ -50,6 +50,14 @@ for ( let i = 0; i < 16; i++) {
     newRow.appendChild(newBox);  
 
 }
+
+
+
+// jquery test
+
+$(document).ready(function() {
+    alert("jquery loaded"); 
+})
 */
 
 // with nested loop 
@@ -74,4 +82,26 @@ for (i = 0; i <= 15; i++) {
 
 }
 
-// need :hover to remain and leave a trail
+// for the elements of the newBox class (every individual div in the grid),
+// we want to change the color to orange when we :hover over it, AND 
+// ensure the boxes stay the changed color so we have a pixelated trail. 
+
+// right now they are all given the:hover class in css. 
+// but how can we ensure it stays the color it changes to whe hover is activated? 
+
+
+// jquery to keep the color at orange forever 
+$(document).ready(function() {
+    // grabs the individual grid div and creates a function when .hover is activated
+    // adds a hover class to each newBox class (each square)
+    // .hover in css changes the background (permanently) to orange. 
+    $('.newBox').hover(function() {
+        $(this).addClass('hover');
+    })
+})
+
+// activated when button of id "popupBtn" is clicked
+function btnPopUp() {
+    // sends user a POPUP asking for number of squares per side for the new grid
+    alert("How many squares per side are in the grid?");
+}
