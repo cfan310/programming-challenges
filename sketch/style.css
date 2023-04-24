@@ -9,6 +9,7 @@
     background-color: green;
 }
 
-.newBox:hover {
-    background-color: orange;
+.hover {
+    background: orange; 
+    transition: all 0.5s ease; 
 }
