@@ -1,18 +1,19 @@
-* {
+/** {
     border: solid 2px green;
-}
+}*/
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
 .main-container {
     display: flex;
+    height: 580px;
 }
 
 .left-container {
     display: flex;
     flex-direction: column;
     gap: 50px;
-    height: 650px;
+    height: 580px;
     width: 35%;
     background-color: rgb(57, 176, 254);
     color: white;
@@ -31,6 +32,7 @@
 
 .right-container {
     width: 65%; 
+    background: rgb(220, 220, 220);
 }
 
 nav {
@@ -49,17 +51,25 @@ nav {
 
 .inner-container-left-side {
     display: flex;
+    justify-content: center;
     width: 60%;
     flex-direction: column;
 }
 
+.inner-container-left-side > h3 {
+    display: flex;
+    justify-content: center; 
+}
+
 .inner-container-right-side {
     display: flex;
+    flex-direction: column;
     width: 40%;
 }
 
 .yourProjects {
     display: grid;
-    grid-template-columns: ;
-    grid-template-rows: ;
+    grid-template-columns: 180px 180px;
+    grid-template-rows: 120px 120px 120px;   
+    gap: 10px;
 }
