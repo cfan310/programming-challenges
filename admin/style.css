@@ -2,24 +2,57 @@
     border: solid 2px green;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+.main-container {
+    display: flex;
+}
+
 .left-container {
     display: flex;
     flex-direction: column;
     gap: 50px;
+    height: 650px;
+    width: 35%;
+    background-color: rgb(57, 176, 254);
+    color: white;
+    font-family: 'Poppins', sans-serif;
 }
 
-.gridContainer {   
-
-    display: grid; 
-    grid-template-rows: 50px 50px 50px 50px 50px ; 
-    grid-template-columns: 50px 50px 50px 50px 50px; 
-    gap: 20px;
-    background-color: aqua;
+.dashboard {
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
 }
 
-.gridItem {
-    height: 50px;
-    width: 50px;
-    background-color: orangered; 
-}  
+.home-column-container, .settings-column-container {
+    margin-left: 20px;
+}
 
+.right-container {
+    width: 65%; 
+}
+
+nav {
+    display: flex;
+    gap: 10px;
+    height: 40px;
+}
+
+.hiThere {
+    display: flex;
+}
+
+.inner-container {
+    display: flex;
+}
+
+.inner-container-left-side {
+    display: flex;
+    width: 60%;
+}
+
+.inner-container-right-side {
+    display: flex;
+    width: 40%;
+}
