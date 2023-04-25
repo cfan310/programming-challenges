@@ -1,5 +1,25 @@
+* {
+    border: solid 2px green;
+}
+
 .left-container {
     display: flex;
     flex-direction: column;
     gap: 50px;
 }
+
+.gridContainer {   
+
+    display: grid; 
+    grid-template-rows: 50px 50px 50px 50px 50px ; 
+    grid-template-columns: 50px 50px 50px 50px 50px; 
+    gap: 20px;
+    background-color: aqua;
+}
+
+.gridItem {
+    height: 50px;
+    width: 50px;
+    background-color: orangered; 
+}  
+
