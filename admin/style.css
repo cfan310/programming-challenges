@@ -50,9 +50,16 @@ nav {
 .inner-container-left-side {
     display: flex;
     width: 60%;
+    flex-direction: column;
 }
 
 .inner-container-right-side {
     display: flex;
     width: 40%;
+}
+
+.yourProjects {
+    display: grid;
+    grid-template-columns: ;
+    grid-template-rows: ;
 }
