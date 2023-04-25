@@ -43,6 +43,21 @@ nav {
 
 .hiThere {
     display: flex;
+    gap: 25px;
+}
+
+.hiThere-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.hiThere-buttons > div > button {
+    background-color: rgb(12, 166, 174);
+    color: white;
+    font-family: 'Poppins', sans sans-serif;
+    border-radius: 40%;
+    font-weight: bold;
+
 }
 
 .inner-container {
