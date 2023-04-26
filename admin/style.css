@@ -4,7 +4,7 @@
 
 :root {
     --left-container-width: 250px;
-    --right-container-width: 600px;
+    --right-container-width: 800px;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
@@ -27,14 +27,14 @@
 
 .main-container {
     display: flex;
-    height: 580px;
+    height: 700px;
 }
 
 .left-container {
     display: flex;
     flex-direction: column;
     gap: 50px;
-    height: 580px;
+    height: 700px;
     width: var(--left-container-width);
     background-color: rgb(27, 158, 245);
     color: white;
@@ -135,38 +135,21 @@ input {
 .inner-container-left-side {
     display: flex;
     justify-content: center;
-    width: 60%;
+    width: 500px;
     flex-direction: column;
+    padding: 10px;
 }
 
 .inner-container-left-side > h3 {
     display: flex;
-    justify-content: center; 
+    font-size: 14px;
+    margin-left: 15px;
 }
 
 .inner-container-right-side {
     display: flex;
     flex-direction: column;
-    width: 40%;
-}
-
-/*
-.yourProjects {
-    display: grid;
-    grid-template-columns: 180px 180px;
-    grid-template-rows: 120px 120px 120px;   
-    gap: 10px;
-    border: solid 2px black;
-}
-*/
-
-.yourProjects {
-    display: grid;
-    grid-template-columns: 180px 180px;
-    grid-template-rows: 120px 120px 120px;   
-    grid-gap: 2px;
-    border: solid 2px black;
-    margin-left: 15px;
+    width: 400px;
 }
 
 .card-content {
@@ -184,18 +167,18 @@ input {
 
 .gridContainer {  
     display: grid; 
-    grid-template-columns: 220px 220px;
-    grid-template-rows: 165px 165px 165px; 
+    grid-template-columns: 200px 200px;
+    grid-template-rows: 140px 140px 140px; 
     gap: 20px;
-    background-color: rgb(208, 208, 208);
+    /*background-color: rgb(208, 208, 208);*/
 }
 
 .gridItem {
     background-color: rgb(255, 255, 255);
     border-radius: 2% 5% 5% 0%;
     box-shadow: -5px 0px #f6c606;
-    padding: 20px;
-    margin: 20px; 
+    padding: 15px;
+    margin-left: 13px;
 }
 
 .gridItemHeader {
@@ -216,6 +199,6 @@ input {
 }
 
 .cardIcon {
-    height: 10px;
-    width: 10px;
+    height: 13px;
+    width: 13px;
 }
