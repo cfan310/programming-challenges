@@ -9,6 +9,13 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
+/*icon size*/
+
+.icon {
+    height: 15px;
+    width: 15px;  
+}
+
 .main-container {
     display: flex;
     height: 580px;
@@ -40,15 +47,23 @@
     background: rgb(220, 220, 220);
 }
 
+.navBar-container {
+    background-color: white;
+    height: 90px;
+    box-shadow: 0px 8px 8px rgb(162, 162, 162);
+}
+
 nav {
     display: flex;
     gap: 10px;
-    height: 40px;
+    height: 40px; 
+    margin-left: 15px;
 }
 
 .hiThere {
     display: flex;
     gap: 25px;
+    margin-left: 15px;
 }
 
 .hiThere-buttons {
