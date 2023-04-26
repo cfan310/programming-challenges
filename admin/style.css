@@ -91,6 +91,19 @@ input {
     margin-left: 15px;
 }
 
+.hiThereText {
+    display: flex;
+    flex-direction: column;
+}
+
+.hiThereText .hiThere1  {
+    font-size: 10px;
+}
+
+.hiThereText .gregSamsa {
+    font-size: 18px;
+}
+
 .hiThere-buttons {
     display: flex;
     gap: 20px;
