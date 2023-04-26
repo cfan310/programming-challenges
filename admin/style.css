@@ -152,6 +152,13 @@ input {
     width: 400px;
 }
 
+.inner-container-right-side > h3 {
+    display: flex;
+    font-size: 14px;
+    margin-left: 15px;
+
+}
+
 .card-content {
     font-size: 10px;
     font-family: Arial, Helvetica, sans-serif;
@@ -201,4 +208,77 @@ input {
 .cardIcon {
     height: 13px;
     width: 13px;
+}
+
+.announcements-container {
+    display: flex; 
+    flex-direction: column;
+    height: 250px;
+    width: 150px;
+    background-color: white;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+ 
+}
+
+.trending-container {
+    display: flex; 
+    flex-direction: column;
+    height: 250px;
+    width: 150px;
+    background-color: white;
+}
+
+
+.announcements-header, .trending-header {
+    font-size: 14px;
+    color: black;
+}
+
+.announcements-card-item, .trending-card-item, .trending-card-title {
+    font-size: 11px;
+}
+
+.trending-card-title {
+    color: gray;
+}
+
+.announcements-card {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 10px;
+    box-shadow: 0px 0px 8px 4px rgb(162, 162, 162);
+    padding: 5px;
+}
+
+.trending-card-item-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    padding: 10px;
+    background-color: white;
+    margin-top: 10px;
+    box-shadow: 0px 0px 8px 4px rgb(162, 162, 162);
+    font-size: 11px;
+}
+
+.announcements-card-item p {
+    color: gray;
+}
+
+.trending-card-item-container {
+    display: flex;
+}
+
+.divider-line {
+    display: flex;
+    height: 2px;
+    width: 150px;
+    background-color: gray;
+    justify-content: center;
+    align-items: center;
 }
