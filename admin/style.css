@@ -7,9 +7,17 @@
     --right-container-width: 600px;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+    font-family: 'Lato', sans-serif;
+}
 
 /*icon size*/
+
+input {
+    width: 280px;
+}
 
 .icon {
     height: 15px;
@@ -29,7 +37,6 @@
     width: var(--left-container-width);
     background-color: rgb(57, 176, 254);
     color: white;
-    font-family: 'Poppins', sans-serif;
 }
 
 .dashboard {
