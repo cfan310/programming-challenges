@@ -185,7 +185,7 @@ input {
 .gridContainer {  
     display: grid; 
     grid-template-columns: 220px 220px;
-    grid-template-rows: 150px 150px 150px; 
+    grid-template-rows: 165px 165px 165px; 
     gap: 20px;
     background-color: rgb(208, 208, 208);
 }
@@ -206,4 +206,16 @@ input {
 .gridItemContent > p {
     font-size: 11px;
     color: gray;
+}
+
+.gridItemIcons {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-left: 90px;
+}
+
+.cardIcon {
+    height: 10px;
+    width: 10px;
 }
