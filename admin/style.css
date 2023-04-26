@@ -15,13 +15,14 @@
 
 /*icon size*/
 
-input {
-    width: 280px;
+.icon {
+    height: 17px;
+    width: 17px;  
 }
 
-.icon {
-    height: 15px;
-    width: 15px;  
+#largeAccountIcon {
+    height: 28px;
+    width: 28px; 
 }
 
 .main-container {
@@ -35,7 +36,7 @@ input {
     gap: 50px;
     height: 580px;
     width: var(--left-container-width);
-    background-color: rgb(57, 176, 254);
+    background-color: rgb(27, 158, 245);
     color: white;
 }
 
@@ -58,13 +59,30 @@ input {
     background-color: white;
     height: 90px;
     box-shadow: 0px 8px 8px rgb(162, 162, 162);
+    font-weight: bold;
 }
 
 nav {
     display: flex;
-    gap: 10px;
+    gap: 25px;
     height: 40px; 
     margin-left: 15px;
+    padding-top: 6px;
+}
+
+.searchBar {
+    display: flex;
+    gap: 10px;
+}
+/*search bar width*/
+input {
+    width: 250px;
+}
+
+.navbar-top-right {
+    display: flex;
+    gap: 20px;
+    margin-left: 50px;
 }
 
 .hiThere {
@@ -76,14 +94,21 @@ nav {
 .hiThere-buttons {
     display: flex;
     gap: 20px;
+    margin-left: 120px;
 }
 
 .hiThere-buttons > div > button {
-    background-color: rgb(12, 166, 174);
+    background-color: rgb(27, 158, 245);
     color: white;
-    font-family: 'Poppins', sans sans-serif;
-    border-radius: 40%;
+    border-radius: 25px;
     font-weight: bold;
+    font-size: 10px;
+    height: 20px;
+    width: 50px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
 
