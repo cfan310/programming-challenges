@@ -2,6 +2,11 @@
     border: solid 2px green;
 }*/
 
+:root {
+    --left-container-width: 250px;
+    --right-container-width: 600px;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
 .main-container {
@@ -14,7 +19,7 @@
     flex-direction: column;
     gap: 50px;
     height: 580px;
-    width: 35%;
+    width: var(--left-container-width);
     background-color: rgb(57, 176, 254);
     color: white;
     font-family: 'Poppins', sans-serif;
@@ -31,7 +36,7 @@
 }
 
 .right-container {
-    width: 65%; 
+    width: var(--right-container-width);
     background: rgb(220, 220, 220);
 }
 
