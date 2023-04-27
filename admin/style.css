@@ -4,7 +4,7 @@
 
 :root {
     --left-container-width: 250px;
-    --right-container-width: 800px;
+    --right-container-width: 700px;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
@@ -52,7 +52,8 @@
 
 .right-container {
     width: var(--right-container-width);
-    background: rgb(220, 220, 220);
+    background: rgb(220, 220, 220);   
+
 }
 
 .navBar-container {
@@ -150,14 +151,16 @@ input {
     display: flex;
     flex-direction: column;
     width: 400px;
+    justify-content: center;
+    align-items: center;
 }
 
 .inner-container-right-side > h3 {
     display: flex;
     font-size: 14px;
     margin-left: 15px;
-
 }
+
 
 .card-content {
     font-size: 10px;
@@ -219,6 +222,8 @@ input {
     padding: 10px;
     justify-content: center;
     align-items: center;
+    margin-top: 20px;
+    margin-left:
  
 }
 
