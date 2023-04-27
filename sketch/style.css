@@ -3,7 +3,6 @@
     flex-direction: row;
 }
 
-
 .newBox {
     color: white;
     background-color: green;
@@ -13,3 +12,22 @@
     background: orange; 
     transition: all 0.5s ease; 
 }
+
+#newGridContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.squareContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.mainSquare {
+    height: 500px;
+    width: 500px; 
+    border: solid 2px black;
+}
+
+
+

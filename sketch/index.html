@@ -9,14 +9,45 @@
 </head>
 <body>
 
-    <div class="btn-container" onclick="btnPopUp()">
-        <button id="popupBtn">PopUp</button>
+    <button onclick="remChild()">remove child div</button>
+
+    <div id="parentDiv">
+        parent 
+        <div id="childDiv">
+            child div
+          </div>
+    </div>
+
+    <div class="btn-container" onclick="createNewGrid()">
+        <button id="popupBtn">Create new Grid</button>
     </div>
 
 
     <div id="gridContainer"> 
         <!---we will use loop to append 16 letters to this div-->
     </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+    <div class="squareContainer">
+        <div class="mainSquare"></div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
     
     <script src="jquery-3.6.4.js"></script>
     <script src="app.js"></script>
