@@ -218,12 +218,9 @@ input {
     flex-direction: column;
     height: 250px;
     width: 150px;
-    background-color: white;
-    padding: 10px;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
-    margin-left:
+    padding-top: 40px;
  
 }
 
@@ -232,13 +229,14 @@ input {
     flex-direction: column;
     height: 250px;
     width: 150px;
-    background-color: white;
 }
 
 
 .announcements-header, .trending-header {
     font-size: 14px;
     color: black;
+    font-weight: 600;
+
 }
 
 .announcements-card-item, .trending-card-item, .trending-card-title {
