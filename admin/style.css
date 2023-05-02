@@ -257,6 +257,10 @@ input {
     padding: 5px;
 }
 
+.announcements-card h4 {
+    margin: 3px;
+}
+
 .trending-card-item-container {
     display: flex;
     flex-direction: row;
