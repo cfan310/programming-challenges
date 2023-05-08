@@ -23,10 +23,11 @@
     justify-content: center;
 }
 
-.mainSquare {
-    height: 500px;
-    width: 500px; 
-    border: solid 2px black;
+#mainSquare {
+    height: 800px;
+    width: 800px; 
+    border: solid 2px black;  
+    display: flex;
 }
 
 
