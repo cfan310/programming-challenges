@@ -32,6 +32,8 @@ function LoginInfo(firstName, lastName, email, phoneNumber, password) {
     this.password = password;
 }
 
+// ADD loginfo to main page
+
 // now let's create a function that sends the input form data to an OBJECT from the input names and the constructor function
 
 // on Create Account Click
